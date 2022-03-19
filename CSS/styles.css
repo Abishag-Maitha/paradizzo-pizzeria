@@ -1,0 +1,14 @@
+body{
+    font-family: 'Poppins',sans-serif;
+        margin: 0;
+        overflow: scroll;
+}
+em{
+color: red;
+}
+.home p{
+    font-family: 'Poppins',sans-serif;
+}
+.nav-item:hover{
+    background-color: white;
+}
