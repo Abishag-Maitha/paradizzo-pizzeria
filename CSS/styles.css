@@ -19,3 +19,6 @@ color: red;
 .col-md-4 img{
     max-width: 100%;
 }
+.veg,.meat,.chicken{
+display: none;
+}
