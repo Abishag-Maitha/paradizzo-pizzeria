@@ -16,3 +16,6 @@ color: red;
     height: 50vh;
     width: 50vw;
 } */
+.col-md-4 img{
+    max-width: 100%;
+}
