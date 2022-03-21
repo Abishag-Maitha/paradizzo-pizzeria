@@ -55,3 +55,6 @@ display: none;
         transform: translateY(-15vh);
     }
 }
+input#delivery {
+    width: 10vw;
+}
