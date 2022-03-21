@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Nunito+Sans:wght@200&family=Poppins:wght@300&family=Smooch+Sans:wght@100;200;300;400&display=swap');
+
 body{
     font-family: 'Poppins',sans-serif;
         margin: 0;
         overflow: scroll;
+        font-family: 'Poppins', sans-serif;
 }
 em{
 color: red;
@@ -35,4 +38,20 @@ display: none;
   .crd img{
     width: 300%;
     height: 300%;
+}
+.image{
+    animation:move 3s ease-in forwards infinite ;
+    clip-path: circle();
+}
+@keyframes move{
+    0%{
+        transform: translateY(-10vh);
+    }
+    50%{
+        transform: translateY(20vh);
+        transform: scale(0.7);
+    }
+    100%{
+        transform: translateY(-15vh);
+    }
 }
