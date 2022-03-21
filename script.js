@@ -12,7 +12,17 @@ $(document).ready(function(){
         this.quantity=quantity
    }        
    Pizza.prototype.calculatePrice=function(){
-
+       let qty=this.quantity
+       let itemQty=0;
+       if (qty !="" ){
+       itemQty =parseInt(qty)
+       }
+       else{
+           itemQty=1
+       }
+    
+    let unitPrice=parseInt((this.price).slice(4))
+    return itemQty*unitPrice;
    }
 
    //getting user input
@@ -28,8 +38,40 @@ $(document).ready(function(){
     let pizzeria=new Pizza(size, crust, toppings,price, quantity)
     //generating a table
     let tableData=`
-    
+    <tr>
+              <td>${pizzeria.size}</td>
+              <td>${pizzeria.quantity}</td>
+              <td>${pizzeria.crust}</td>
+              <td>${pizzeria.toppings}</td>
+              <td>${pizzeria.price}</td>
+              <td class="lastcol">${pizzeria.calculatePrice()}.</td>
+              
+     </tr>
     `
+    let tableBody=$("#table tbody")
+    tableBody[0].innerHTML+=tableData
+
+    //generating the totals
+    let lastColumn=$("tr td.lastcol").text().split(".")
+    let temp =[]
+    for(var i=0; i<lastColumn.length-1; i++){
+        temp.push(lastColumn[i]);
+    }
+    let num=temp.map(function(nums){
+        return +nums
+    })
+    let total=num.reduce(function(summation,sum){
+        return summation+sum
+    }, 0)
+
+    let tfoot=$("table tfoot")
+    tfoot[0].innerHTML=`
+    <tr>
+            <td>total</td>
+            <td>${total}</td>
+     </tr>
+    `
+
    })
 
     });
