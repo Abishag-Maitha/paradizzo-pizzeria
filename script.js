@@ -25,6 +25,20 @@ $(document).ready(function(){
     return itemQty*unitPrice;
    }
 
+   //Delivery fee
+   let transport=0
+   let checkbox=$("#delivery")
+   checkbox.val(this.checked)
+   checkbox.change(function(){
+       if (this.checked){
+        transport=200;
+        $(this).prop("checked", transport)
+       }
+       else{
+           transport=0
+       }
+   })
+
    //getting user input
    let buttons=$(".card button")
    buttons.click(function(){
@@ -68,10 +82,9 @@ $(document).ready(function(){
     tfoot[0].innerHTML=`
     <tr>
             <td>total</td>
-            <td>${total}</td>
+            <td>${total + transport}</td>
      </tr>
     `
-
    })
 
     });
