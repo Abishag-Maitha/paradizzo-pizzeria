@@ -22,3 +22,17 @@ color: red;
 .veg,.meat,.chicken{
 display: none;
 }
+.order div{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 20%; 
+    height: 15vw;
+    text-align: center;
+    margin-right: 4vw;
+    padding: 5vw;
+  } 
+  .crd img{
+    width: 300%;
+    height: 300%;
+}
