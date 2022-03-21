@@ -30,69 +30,141 @@
           </div>
         </div>
       </nav>
+      <div class="card-group">
+        <div class="card">
+          <img src="images/meat/meatlovers.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Small</h5>
+            <p class="card-text text-center">Meat-Lovers' <br>
+              <span class="text-danger fw-bold">Kshs 550</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+             <p>select your favorite toppings and crust</p> 
+              <div class="d-flex">
+                <div>
+                  <select name="crust" id="crust" class="mb-3">
+                    <option value="cripsy">Cripsy</option>
+                    <option value="stuffed">Stuffed</option>
+                     <option value="gluten-free">Gluten-Free</option>
+                  </select>
+                  <select name="toppings" id="toppings">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="black-olive">Black-Olive</option>
+                    <option value="extra-cheese">Extra-Cheese</option>
+                    <option value="sausage">Sausage</option>
+                  </select>
+                </div>
+               
+               <div>
+                 <h6>Quantity</h6>
+                <input type="number" min="1" class="w-25">
+               </div>
+               <button class="btn btn-warning"><i class="fa-solid fa-cart-arrow-down"></i></button> 
+             </div>
+            </small>
+          </div>
+        </div>
+        <!-- medium size section -->
+        <div class="card">
+          <img src="images/chicken/Chicken & Mushroom.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Medium</h5>
+            <p class="card-text text-center">Chicken&Mushroom <br> 
+              <span class="text-danger fw-bold">Kshs 900</span>
+            </p> 
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+              <p>select your favorite toppings and crust</p> 
+              <div class="d-flex">
+                <div>
+                  <select name="crust" id="crust" class="mb-3">
+                    <option value="cripsy">Cripsy</option>
+                    <option value="stuffed">Stuffed</option>
+                     <option value="gluten-free">Gluten-Free</option>
+                  </select>
+                  <select name="toppings" id="toppings">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="black-olive">Black-Olive</option>
+                    <option value="extra-cheese">Extra-Cheese</option>
+                    <option value="sausage">Sausage</option>
+                  </select>
+                </div>
+               
+               <div>
+                 <h6>Quantity</h6>
+                <input type="number" min="1" class="w-25">
+               </div>
+                <button class="btn btn-warning"><i class="fa-solid fa-cart-arrow-down"></i></button> 
+              </div>
+            </small>
+          </div>
+        </div>
+        <!-- large pizza section -->
+        <div class="card">
+          <img src="images/veg/roasted-feta.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Large</h5>
+            <p class="card-text text-center">Roasted-Feta <br>
+              <span class="text-danger fw-bold">Kshs 1,100</span>
+            </p>
+             
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+              <p>select your favorite toppings and crust</p> 
+              <div class="d-flex">
+                <div>
+                  <select name="crust" id="crust" class="mb-3">
+                    <option value="cripsy">Cripsy</option>
+                    <option value="stuffed">Stuffed</option>
+                     <option value="gluten-free">Gluten-Free</option>
+                  </select>
+                  <select name="toppings" id="toppings">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="black-olive">Black-Olive</option>
+                    <option value="extra-cheese">Extra-Cheese</option>
+                    <option value="sausage">Sausage</option>
+                  </select>
+                </div>
+               
+               <div>
+                 <h6>Quantity</h6>
+                <input type="number" min="1" class="w-25">
+               </div>
+               <button class="btn btn-warning"><i class="fa-solid fa-cart-arrow-down"></i></button> 
+             </div>
+            </small>
+          </div>
+        </div>
+      </div>
    
-    <!-- Pizza ordering section. -->
-    <section class="container-fluid order text-center justify-content-center align-items-center">  
-      <h3 class="text-center text-muted">Your Favourite Pizza delivery Partner</h3>
-
-          <!-- first section -->
-          <div class=" w-100 d-flex justify-content-evenly mb-5 mt-1 p-5 me-5">
-            <div class="crd">
-              <img src="images/chicken/BBQ Chicken.jpeg" alt="" width="700px"/>
-              <p>BBQ chicken</p>
-            </div>
-
-            <div class="crd">
-              <img src="images/chicken/chicken-hawaiian.jpeg" alt="" width="300"/>
-              <p>hawaiian</p>
-            </div>
-
-            <div class="crd">
-              <img src="images/chicken/Chicken & Mushroom.jpg" alt="" />
-              <p>chicken&mushroom</p>
-            </div>
-            <div class="crd">
-              <img src="images/margherita/classic-margherita-pizza.jpg" alt="" />
-              <p>margherita</p>
-            </div>
-            </div>
-
-             <!-- second section -->
-          <div class=" w-100 d-flex justify-content-evenly mb-5 mt-1 p-5 me-5">
-            <div class="crd">
-              <img src="images/meat/pepperoni-lovers.jpg" alt="" />
-              <p>pepperoni</p>
-            </div>
-            <div class="crd">
-              <img src="images/meat/bbq-meatlovers.jpg" alt="" />
-              <p>Barbeque</p>
-            </div>
-            
-            <div class="crd">
-              <img src="images/veg/roasted-feta.jpeg" alt="" />
-              <p>roasted feta</p>
-            </div>
-            
-            <div class="crd">
-              <img src="images/veg/tropical-veg.png" alt="" />
-              <p>tropical</p>
-            </div>
-            </div> 
-        </section>
-        <!-- Toppings section -->
-        <section  class="container-fluid toppings text-center justify-content-center align-items-center p-5 mt-5 mb-5"> 
-          <h2>Choose your favorite toppings here!!</h2>
           
-            <p>Mushroom <em>@Kshs.150(small), @Kshs.200(medium), @Kshs.300(large)</em></p>
-            <p>Extra cheese <em>@Kshs.150(small), @Kshs.200(medium), @Kshs.300(large)</em></p>
-            <p>Sausage <em>@Kshs.150(small), @Kshs.200(medium), @Kshs.300(large)</em></p>
-            <p>Onion <em>@Kshs.150(small), @Kshs.200(medium), @Kshs.300(large)</em></p>
-            <p>Black olives <em>@Kshs.150(small), @Kshs.200(medium), @Kshs.300(large)</em></p>
-            <p>Green pepper <em>@Kshs.150(small), @Kshs.200(medium), @Kshs.300(large)</em></p>
-            <p>Fresh garlic <em>@Kshs.150(small), @Kshs.200(medium), @Kshs.300(large)</em></p>
-          
-        </section>
-        
+      <div class="mt-5 p-3 fw-bold">
+        <table class="table table-striped" id="table">
+          <thead>
+            <tr>
+              <td>Size</td>
+              <td>Quantity</td>
+              <td>Crust</td>
+              <td>Toppings</td>
+              <td>Price</td>
+              <td>Total Price</td>
+              </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+          <tfoot>
+
+          </tfoot>
+        </table>
+      </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
